@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.38dfea40.css",
-    "main.js": "/portfolio/static/js/main.f8fff770.js",
+    "main.css": "/portfolio/static/css/main.ccf92d0a.css",
+    "main.js": "/portfolio/static/js/main.41a3a1cf.js",
     "static/media/onmovie.png": "/portfolio/static/media/onmovie.feb5a50ed30b20b97be1.png",
+    "static/media/hotel.png": "/portfolio/static/media/hotel.7fe6faeee94b27910100.png",
     "static/media/onMovieApp.png": "/portfolio/static/media/onMovieApp.0606bfb827fecc7e6e3a.png",
     "static/media/ecommerce.png": "/portfolio/static/media/ecommerce.7e1913b4819eda965c1d.png",
     "static/media/music-player.png": "/portfolio/static/media/music-player.3a3a8993cad9d9074b69.png",
     "static/media/kaslee4.jpg": "/portfolio/static/media/kaslee4.07e9b161f8e218923a95.jpg",
     "static/media/form-validation.png": "/portfolio/static/media/form-validation.7b72707547147bcdcc86.png",
     "index.html": "/portfolio/index.html",
-    "main.38dfea40.css.map": "/portfolio/static/css/main.38dfea40.css.map",
-    "main.f8fff770.js.map": "/portfolio/static/js/main.f8fff770.js.map"
+    "main.ccf92d0a.css.map": "/portfolio/static/css/main.ccf92d0a.css.map",
+    "main.41a3a1cf.js.map": "/portfolio/static/js/main.41a3a1cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.38dfea40.css",
-    "static/js/main.f8fff770.js"
+    "static/css/main.ccf92d0a.css",
+    "static/js/main.41a3a1cf.js"
   ]
 }
