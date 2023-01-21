@@ -107,9 +107,11 @@ function Tech() {
                      width={item.width}
                      height={item.height}
                   >
-                     <item.Icon
-                        className={`w-20 h-20 p-2 mb-2 text-${item.color}`}
-                     />
+                     <div className={`text-${item.color}`}>
+                        <item.Icon
+                           className={`w-20 h-20 p-2 mb-2 text-current`}
+                        />
+                     </div>
                   </Card>
                ))}
             </div>
