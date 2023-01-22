@@ -17,16 +17,16 @@ function Home() {
                      Front-end Developer
                   </h2>
                   <p className='text-gray-500 text-sm text-justify max-w-md'>
-                     My name is Lê Mai Khánh and my
-                     preferred name is Khánh Lê or Kas. I am
-                     a final year student in Ho Chi Minh
-                     university of foreign languages and
-                     information technology (HUFLIT). I am
-                     passionate about software development
-                     and visual identity. Therefore,
-                     becoming a front-end developer is what
-                     I would love to be. And I am now ready
-                     to kick start my career.
+                     My name is Khánh and my preferred name
+                     is Khánh Lê or Kas. I am a final year
+                     student in Ho Chi Minh university of
+                     foreign languages and information
+                     technology (HUFLIT). I am passionate
+                     about software development and visual
+                     identity. Therefore, becoming a
+                     front-end developer is what I would
+                     love to be. I am now ready to kick
+                     start my career.
                   </p>
                   <div className='flex w-full justify-center md:justify-start'>
                      <Link

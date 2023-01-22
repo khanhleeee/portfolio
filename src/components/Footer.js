@@ -17,16 +17,6 @@ function Footer() {
                </h3>
                <ul>
                   <li className='py-2'>
-                     <span>Phone: </span>
-                     <a
-                        className='font-mono transition-opacity hover:opacity-80'
-                        target='_blank'
-                        href='tel:0866764751'
-                     >
-                        0866764751
-                     </a>
-                  </li>
-                  <li className='py-2'>
                      <span>Email: </span>
                      <a
                         className='font-mono transition-opacity hover:opacity-80'

@@ -8,11 +8,11 @@ function About() {
          amount: '3.75',
          subDesc: '2019-2022',
       },
-      {
-         title: 'Complete online courses (F8 Official)',
-         amount: '3',
-         subDesc: 'HTML-CSS, Javascript, ReactJS',
-      },
+      // {
+      //    title: 'Complete online courses (F8 Official)',
+      //    amount: '3',
+      //    subDesc: 'HTML-CSS, Javascript, ReactJS',
+      // },
    ];
 
    return (
