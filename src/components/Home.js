@@ -32,7 +32,7 @@ function Home() {
                      <Link
                         to='eduction'
                         smooth
-                        duration={500}
+                        duration={300}
                         className='group flex items-center text-sm font-robot font-medium mt-6 p-3 rounded bg-gradient-to-br from-main-pink to-main-pink via-main-blue transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100 select-none'
                      >
                         Let's start

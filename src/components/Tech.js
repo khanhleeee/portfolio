@@ -97,7 +97,7 @@ function Tech() {
             </div>
          </Zoom>
 
-         <Fade bottom delay={1000}>
+         <Fade bottom delay={400} duration={400}>
             <div className='grid grid-cols-2 md:gap-4 md:grid-cols-4 lg:grid-cols-7 place-content-center'>
                {technologies.map((item, i) => (
                   <Card

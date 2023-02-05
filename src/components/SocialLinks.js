@@ -53,7 +53,7 @@ function SocialLinks() {
    ];
 
    return (
-      <div className='flex-col top-[35%] left-0 fixed'>
+      <div className='flex-col top-[35%] left-0 fixed z-30'>
          <ul>
             {links.map(
                ({ id, href, child, download, style }) => (

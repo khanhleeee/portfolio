@@ -30,7 +30,7 @@ function About() {
                </h4>
             </div>
          </Zoom>
-         <Fade left delay={1000}>
+         <Fade left delay={400}>
             <div className='flex flex-col md:flex-row justify-center items-center px-8'>
                {educations.map((item, i) => (
                   <EducCard key={i} item={item} />
