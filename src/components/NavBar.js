@@ -22,7 +22,7 @@ function NavBar() {
       {
          id: 1,
          name: "Frontend Developer",
-         path: "/",
+         path: "/portfolio",
       },
       // {
       //    id: 2,
@@ -90,7 +90,7 @@ function NavBar() {
                ))}
             </ul>
 
-            {activeSide === "/" && (
+            {activeSide === "/portfolio" && (
                <ul className="hidden md:flex pr-10 pl-8 pb-4 mt-5">
                   {navbarItems.map(({ id, link }) => (
                      <li
