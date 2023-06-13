@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-no-target-blank */
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoIosClose } from "react-icons/io";
@@ -15,7 +15,6 @@ import {
 } from "react-icons/ai";
 
 import Heart from "../assets/designs/heart.png";
-import { useEffect } from "react";
 
 function NavBar() {
    const sides = [
@@ -92,7 +91,7 @@ function NavBar() {
                      key={id}
                      className="text-sm capitalize font-medium text-gray-50 "
                   >
-                     <LinkScroll
+                     <Link
                         to={link}
                         smooth
                         duration={500}
@@ -104,7 +103,7 @@ function NavBar() {
                         onClick={() => setActive(id)}
                      >
                         {link}
-                     </LinkScroll>
+                     </Link>
                   </li>
                ))}
             </ul>
