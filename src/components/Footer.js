@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { BsFillSuitHeartFill } from 'react-icons/bs';
 import { FaFacebookSquare } from 'react-icons/fa';
 import {
@@ -5,7 +6,6 @@ import {
    AiFillGithub,
    AiFillLinkedin,
 } from 'react-icons/ai';
-import { Link } from 'react-scroll';
 
 function Footer() {
    return (

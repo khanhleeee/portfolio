@@ -1,62 +1,92 @@
-import Fade from 'react-reveal/Fade';
-import { IoIosArrowDropright } from 'react-icons/io';
-import { Link } from 'react-scroll';
+import { TypeAnimation } from "react-type-animation";
 
-import MyImg from '../assets/kaslee4.jpg';
+import Avatar from "../assets/avatar_home.png";
+
+import SmileFace from "../assets/designs/smileface.png";
+import Flower from "../assets/designs/flower.png";
+import Music from "../assets/designs/music.png";
+import NameTag from "../assets/designs/nametags1.png";
 
 function Home() {
    return (
       <div
-         name='home'
-         className='md:h-screen w-full pt-20 bg-gradient-to-b from-main-bg to-[#0e0822]'
+         name="home"
+         className="container mx-auto pt-32 lg:pt-44"
       >
-         <div className='mx-auto flex flex-col items-center justify-center pt-10 md:pt-0 md:flex-row h-full px-7'>
-            <Fade left>
-               <div className='max-w-screen-sm px-2'>
-                  <h2 className='text-3xl sm:text-4xl font-robot font-medium mb-5'>
-                     Front-end Developer
-                  </h2>
-                  <p className='text-gray-500 text-sm text-justify max-w-md'>
-                     My name is Khánh and my preferred name
-                     is Khánh Lê or Kas. I am a final year
-                     student in Ho Chi Minh university of
-                     foreign languages and information
-                     technology (HUFLIT). I am passionate
-                     about software development and visual
-                     identity. Therefore, becoming a
-                     front-end developer is what I would
-                     love to be. I am now ready to kick
-                     start my career.
-                  </p>
-                  <div className='flex w-full justify-center md:justify-start'>
-                     <Link
-                        to='eduction'
-                        smooth
-                        duration={300}
-                        className='group flex items-center text-sm font-robot font-medium mt-6 p-3 rounded bg-gradient-to-br from-main-pink to-main-pink via-main-blue transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100 select-none'
-                     >
-                        Let's start
-                        <IoIosArrowDropright
-                           size={20}
-                           className='ml-2 group-hover:rotate-90 duration-300'
-                        />
-                     </Link>
-                  </div>
+         <div className="h-full flex flex-col justify-center lg:flex-row">
+            <div className="text-center lg:text-left xl:mr-20 lg:mr-28 lg:mt-14">
+               <h1
+                  style={{ whiteSpace: "pre-line" }}
+                  className="font-secondFont leading-normal text-[42px] mb-4 md:text-[50px] xl:mb-8 xl:text-6xl xl:leading-normal tracking-wide"
+               >
+                  <TypeAnimation
+                     sequence={["Hi! I am"]}
+                     wrapper="span"
+                     speed={20}
+                     deletionSpeed={70}
+                     cursor={false}
+                  />
+                  <TypeAnimation
+                     sequence={[800, " Khánh"]}
+                     wrapper="span"
+                     className="font-black"
+                     speed={20}
+                     deletionSpeed={70}
+                     cursor={false}
+                  />
+                  <TypeAnimation
+                     sequence={[
+                        1600,
+                        "\nA Frontend Developer",
+                     ]}
+                     wrapper="span"
+                     speed={20}
+                     deletionSpeed={70}
+                     cursor={false}
+                  />
+               </h1>
+               <p className="mr-0 mb-8 px-10 text-[12px] leading-loose md:leading-loose md:text-sm lg:max-w-[460px] lg:px-0 md:text-[13px] xl:max-w-[600px] lg:mb-0">
+                  My name is Khánh, a graduate of
+                  Information Technology with an excellent
+                  GPA from the Ho Chi Minh University of
+                  Foreign Languages and Information
+                  Technology. With a passion for web
+                  development and design, I am seeking for
+                  an entry-level frontend developer position
+                  to learn and utilize my skills for making
+                  significant contributions.
+               </p>
+            </div>
+
+            <div className="flex justify-center align-bottom">
+               <div className="relative w-[300px] md:w-[380px] px-4 xl:w-[440px]">
+                  <img
+                     className=""
+                     src={Avatar}
+                     alt="avatar"
+                  />
+                  <img
+                     className="w-[150px] absolute top-4 -left-16 animate-bounce-slow lg:w-[180px]"
+                     src={SmileFace}
+                     alt=""
+                  />
+                  <img
+                     className="w-[100px] absolute -top-12 left-2/4 animate-bounce-slow lg:w-[110px]"
+                     src={Flower}
+                     alt=""
+                  />
+                  <img
+                     className="w-[100px] absolute top-28 -right-6 animate-bounce-slow lg:w-[110px]"
+                     src={Music}
+                     alt=""
+                  />
+                  <img
+                     className="hidden w-[110px] absolute bottom-4 -left-24 md:block"
+                     src={NameTag}
+                     alt=""
+                  />
                </div>
-            </Fade>
-            <Fade right>
-               <div className='flex justify-center items-center mt-8 md:mt-0 ml-0 md:ml-20 mb-8'>
-                  <div className='flex relative items-center justify-center bg-transparent border-2 w-72 h-72 md:w-96 md:h-96 rounded-full before:content-[""] before:border-2 hover:before:animate-spin before:w-64 before:h-64 md:before:w-80 md:before:h-80 before:rounded-full before:border-dashed'>
-                     <div className='absolute rounded-full w-60 h-60 md:w-72 md:h-72 overflow-hidden'>
-                        <img
-                           className='object-contain'
-                           src={MyImg}
-                           alt='me'
-                        />
-                     </div>
-                  </div>
-               </div>
-            </Fade>
+            </div>
          </div>
       </div>
    );

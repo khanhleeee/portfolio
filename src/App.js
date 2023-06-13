@@ -1,24 +1,27 @@
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import SocialLinks from './components/SocialLinks';
-import About from './components/About';
-import Tech from './components/Tech';
-import Product from './components/Product';
-import Footer from './components/Footer';
+import { Routes, Route } from "react-router-dom";
+
+import FrontendDevPage from "./pages/FrontendDev";
+import VideoEditorPage from "./pages/VideoEditor";
+import NavBar from "./components/NavBar";
 
 function App() {
    return (
-      <div>
-         <div className='hidden'>
-            <div className='text-html-red text-js-yellow text-bs-purple text-or-red text-mg-green text-gray-500 text-react-blue'></div>
+      <div className="app bg-main-bg overflow-hidden">
+         <div className="hidden">
+            <div className="text-red-500 text-yellow-400 text-purple-500 text-green-500 text-gray-500 text-blue-400 text-blue-500"></div>
          </div>
          <NavBar />
-         <SocialLinks />
-         <Home />
-         <About />
-         <Product />
-         <Tech />
-         <Footer />
+         <Routes>
+            <Route
+               exact="true"
+               path="/"
+               element={<FrontendDevPage />}
+            />
+            <Route
+               path="/videoeditor"
+               element={<VideoEditorPage />}
+            />
+         </Routes>
       </div>
    );
 }

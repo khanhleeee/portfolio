@@ -1,121 +1,113 @@
-import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
+import { AiFillHtml5 } from "react-icons/ai";
 import {
    DiCss3,
    DiReact,
    DiJava,
    DiMongodb,
    DiMsqlServer,
-} from 'react-icons/di';
-import { FaBootstrap } from 'react-icons/fa';
+   DiJavascript1,
+} from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
 import {
-   SiJavascript,
    SiTailwindcss,
    SiFirebase,
    SiOracle,
-} from 'react-icons/si';
-import { Fade } from 'react-reveal';
+} from "react-icons/si";
 
-import Zoom from 'react-reveal/Zoom';
-
-import Card from './elements/Card';
+import Card from "./elements/Card";
+import Flower from "../assets/designs/flower.png";
 
 function Tech() {
    const technologies = [
       {
          Icon: AiFillHtml5,
-         title: 'HTML',
-         color: 'html-red',
+         title: "HTML",
+         color: "red-500",
       },
       {
          Icon: DiCss3,
-         title: 'CSS',
-         color: 'react-blue',
+         title: "CSS",
+         color: "blue-400",
       },
       {
-         Icon: SiJavascript,
-         title: 'Javascript',
-         color: 'js-yellow',
+         Icon: DiJavascript1,
+         title: "Javascript",
+         color: "yellow-400",
       },
       {
          Icon: FaBootstrap,
-         title: 'Bootstrap',
-         color: 'bs-purple',
+         title: "Bootstrap",
+         color: "purple-500",
       },
       {
          Icon: SiTailwindcss,
-         title: 'Tailwind',
-         color: 'react-blue',
+         title: "Tailwind",
+         color: "blue-400",
       },
       {
          Icon: DiReact,
-         title: 'ReactJS',
-         color: 'react-blue',
+         title: "ReactJS",
+         color: "blue-500",
       },
       {
          Icon: DiJava,
-         title: 'Java',
-      },
-      {
-         Icon: AiFillGithub,
-         title: 'GitHub',
+         title: "Java",
       },
       {
          Icon: DiMongodb,
-         title: 'MongoDB',
-         color: 'mg-green',
+         title: "MongoDB",
+         color: "green-500",
       },
       {
          Icon: SiFirebase,
-         title: 'FireBase',
-         color: 'js-yellow',
+         title: "FireBase",
+         color: "yellow-400",
       },
       {
          Icon: SiOracle,
-         title: 'Oracle',
-         color: 'or-red',
+         title: "Oracle",
+         color: "red-500",
       },
-      {
-         Icon: DiMsqlServer,
-         title: 'Microsoft SQL Server',
-         color: 'gray-500',
-      },
+      // {
+      //    Icon: DiMsqlServer,
+      //    title: "MSSQL",
+      //    color: "gray-500",
+      //    position: "top-[30px] left-[54px]",
+      // },
    ];
 
    return (
       <div
-         name='capabilities'
-         className='min-h-screen px-2 md:px-20 pt-24 bg-gradient-to-b from-main-purple to-main-bg'
+         name="capabilities"
+         className="container mx-auto max-h-fit flex flex-col justify-center items-center pt-52 pb-48"
       >
-         <Zoom>
-            <div className='flex flex-col items-center'>
-               <h3 className='relative font-robot inline-block text-2xl font-bold mb-8 before:content-[""] before:absolute before:-bottom-2 before:right-1/2 before:translate-x-1/2 before:w-4/5 before:h-1 before:bg-gradient-to-r before:from-main-blue before:to-main-pink before:rounded-3xl uppercase'>
+         <div className="flex flex-col justify-center items-center mb-10">
+            <div className="relative">
+               <h3 className="relative z-10 font-secondFont font-semibold text-4xl tracking-wide py-2 uppercase mb-4 lg:text-5xl">
                   capabilities
                </h3>
-               <h4 className='mb-12'>
-                  There are technologies I've worked with
-               </h4>
+               <img
+                  className="absolute -top-6 -right-6 w-14 lg:w-20 lg:-right-12 lg:-top-10"
+                  src={Flower}
+                  alt=""
+               />
             </div>
-         </Zoom>
+            <span className="text-sm text-center mb-4">
+               There are technologies I've worked with
+            </span>
+         </div>
 
-         <Fade bottom delay={400} duration={400}>
-            <div className='grid grid-cols-2 md:gap-4 md:grid-cols-4 lg:grid-cols-7 place-content-center'>
-               {technologies.map((item, i) => (
-                  <Card
-                     key={i}
-                     title={item.title}
-                     color={item.color}
-                     width={item.width}
-                     height={item.height}
-                  >
-                     <div className={`text-${item.color}`}>
-                        <item.Icon
-                           className={`w-20 h-20 p-2 mb-2 text-current`}
-                        />
+         <div className="grid place-content-center grid-cols-2 gap-x-8 gap-y-10 md:px-4 md:grid-cols-4 md:gap-x-4 xl:grid-cols-5 max-[400px]:grid-cols-1">
+            {technologies.map(
+               ({ Icon, title, color }, i) => (
+                  <Card key={i} title={title} color={color}>
+                     <div className={`text-${color}`}>
+                        <Icon className="w-10 h-10 text-inherit" />
                      </div>
                   </Card>
-               ))}
-            </div>
-         </Fade>
+               )
+            )}
+         </div>
       </div>
    );
 }
