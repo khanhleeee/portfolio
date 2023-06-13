@@ -55,14 +55,14 @@ function NavBar() {
    ];
 
    const [nav, setNav] = useState(false);
-   const [activeSide, setActiveSide] = useState(
-      window.location.pathname
-   );
    const [active, setActive] = useState(1);
+   // const [activeSide, setActiveSide] = useState(
+   //    window.location.pathname
+   // );
 
-   useEffect(() => {
-      setActiveSide(window.location.pathname);
-   }, [window.location.pathname]);
+   // useEffect(() => {
+   //    setActiveSide(window.location.pathname);
+   // }, [window.location.pathname]);
 
    return (
       <div className="w-full flex fixed z-30 bg-main-bg justify-between items-center ">
@@ -74,11 +74,7 @@ function NavBar() {
                      className="flex text-sm capitalize font-medium text-gray-50 cursor-pointer hover:opacity-80 duration-100 px-10 md:px-8 md:text-md max-[450px]:px-4 lg:text-base"
                   >
                      <TiHeart
-                        className={`text-main-orange mr-1 transition-opacity duration-200 ${
-                           activeSide === path
-                              ? "opacity-100"
-                              : "opacity-0"
-                        }`}
+                        className={`text-main-orange mr-1 transition-opacity duration-200`}
                      />
                      <NavLink
                         to={path}
@@ -90,30 +86,28 @@ function NavBar() {
                ))}
             </ul>
 
-            {activeSide === "/portfolio" && (
-               <ul className="hidden md:flex pr-10 pl-8 pb-4 mt-5">
-                  {navbarItems.map(({ id, link }) => (
-                     <li
-                        key={id}
-                        className="text-sm capitalize font-medium text-gray-50 "
+            <ul className="hidden md:flex pr-10 pl-8 pb-4 mt-5">
+               {navbarItems.map(({ id, link }) => (
+                  <li
+                     key={id}
+                     className="text-sm capitalize font-medium text-gray-50 "
+                  >
+                     <LinkScroll
+                        to={link}
+                        smooth
+                        duration={500}
+                        className={`inline-block cursor-pointer select-none py-1 px-5 mx-4 rounded-full transition-colors duration-200 ${
+                           active === id
+                              ? "bg-main-orange"
+                              : "hover:bg-main-orange/50"
+                        }`}
+                        onClick={() => setActive(id)}
                      >
-                        <LinkScroll
-                           to={link}
-                           smooth
-                           duration={500}
-                           className={`inline-block cursor-pointer select-none py-1 px-5 mx-4 rounded-full transition-colors duration-200 ${
-                              active === id
-                                 ? "bg-main-orange"
-                                 : "hover:bg-main-orange/50"
-                           }`}
-                           onClick={() => setActive(id)}
-                        >
-                           {link}
-                        </LinkScroll>
-                     </li>
-                  ))}
-               </ul>
-            )}
+                        {link}
+                     </LinkScroll>
+                  </li>
+               ))}
+            </ul>
 
             <div
                onClick={() => setNav(!nav)}
