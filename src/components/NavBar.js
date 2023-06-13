@@ -131,10 +131,10 @@ function NavBar() {
                   className="text-center capitalize font-medium text-gray-50 cursor-pointer hover:-translate-y-1 duration-100 px-4 py-4 text-2xl"
                >
                   <Link
-                     onClick={() => setNav(!nav)}
                      to={link}
                      smooth
                      duration={500}
+                     onClick={() => setNav(!nav)}
                   >
                      {link}
                   </Link>

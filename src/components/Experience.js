@@ -16,9 +16,11 @@ function Experience() {
                <h3 className="relative font-secondFont font-semibold text-4xl px-6 mb-6 xl:mr-40 z-20 tracking-wide uppercase xl:text-5xl xl:px-0">
                   Experience
                </h3>
-               <p>Learn one new thing everyday</p>
+               <p className="text-center xl:text-left">
+                  Learn one new thing everyday
+               </p>
                <img
-                  className="w-14 h-14 absolute -top-2 right-8 xl:top-0 xl:right-24"
+                  className="w-14 h-14 absolute -top-2 -right-10 xl:top-0 xl:right-24"
                   src={Rainbow}
                   alt=""
                />
