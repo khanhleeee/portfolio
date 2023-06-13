@@ -14,7 +14,7 @@ function App() {
          <Routes>
             <Route
                exact="true"
-               path="/"
+               path="/portfolio"
                element={<FrontendDevPage />}
             />
             <Route
