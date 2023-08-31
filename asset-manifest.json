@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ad1f90be.css",
-    "main.js": "/portfolio/static/js/main.f78ccbe8.js",
+    "main.css": "/portfolio/static/css/main.764db453.css",
+    "main.js": "/portfolio/static/js/main.4fcaae39.js",
     "static/media/onmovie.png": "/portfolio/static/media/onmovie.feb5a50ed30b20b97be1.png",
     "static/media/unet2.jpg": "/portfolio/static/media/unet2.51cb9e7b2064542ffd22.jpg",
     "static/media/unet1.jpg": "/portfolio/static/media/unet1.2557b9b10e130b4164c8.jpg",
@@ -9,7 +9,9 @@
     "static/media/hotel.png": "/portfolio/static/media/hotel.7fe6faeee94b27910100.png",
     "static/media/onMovieApp.png": "/portfolio/static/media/onMovieApp.0606bfb827fecc7e6e3a.png",
     "static/media/avatar_home.png": "/portfolio/static/media/avatar_home.adb3b34fbaab23e428a2.png",
+    "static/media/tsFitnessApp.png": "/portfolio/static/media/tsFitnessApp.04f4ed70cae52c335649.png",
     "static/media/ecommerce.png": "/portfolio/static/media/ecommerce.7e1913b4819eda965c1d.png",
+    "static/media/reactTrelloWeb.png": "/portfolio/static/media/reactTrelloWeb.adab46b15f8654d516e8.png",
     "static/media/music-player.png": "/portfolio/static/media/music-player.3a3a8993cad9d9074b69.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.14a4939417080b2b97bc.png",
     "static/media/form-validation.png": "/portfolio/static/media/form-validation.7b72707547147bcdcc86.png",
@@ -17,12 +19,13 @@
     "static/media/flower.png": "/portfolio/static/media/flower.5081ec50b3fa980d7d31.png",
     "static/media/music.png": "/portfolio/static/media/music.3ef48f8983a3fd492ee6.png",
     "static/media/heart.png": "/portfolio/static/media/heart.0b39ed368771b3c0fed3.png",
+    "static/media/figma_icon.svg": "/portfolio/static/media/figma_icon.cee13a917b0f56627273cacaabf6e461.svg",
     "index.html": "/portfolio/index.html",
-    "main.ad1f90be.css.map": "/portfolio/static/css/main.ad1f90be.css.map",
-    "main.f78ccbe8.js.map": "/portfolio/static/js/main.f78ccbe8.js.map"
+    "main.764db453.css.map": "/portfolio/static/css/main.764db453.css.map",
+    "main.4fcaae39.js.map": "/portfolio/static/js/main.4fcaae39.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad1f90be.css",
-    "static/js/main.f78ccbe8.js"
+    "static/css/main.764db453.css",
+    "static/js/main.4fcaae39.js"
   ]
 }
