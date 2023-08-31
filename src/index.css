@@ -1,21 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-   html {
-      font-family: "Montserrat", sans-serif;
-      color: #eeeeee;
-   }
+	html {
+		font-family: 'Montserrat', sans-serif;
+		color: #eeeeee;
+	}
 }
 @layer utilities {
-   .animation-delay-2000 {
-      animation-delay: 2s;
-   }
-   .animation-delay-4000 {
-      animation-delay: 4s;
-   }
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+	.animation-delay-4000 {
+		animation-delay: 4s;
+	}
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	@apply bg-main-bg/80;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-main-white/70 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-main-white/80;
 }
