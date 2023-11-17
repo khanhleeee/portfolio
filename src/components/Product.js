@@ -11,11 +11,23 @@ import nodeHotel from '../assets/products/hotel.png'
 import reactPortfolio from '../assets/products/portfolio.png'
 import tsFitnessApp from '../assets/products/tsFitnessApp.png'
 import reactTrelloWeb from '../assets/products/reactTrelloWeb.png'
+import journelJotter from '../assets/products/journel_jotter.png'
 
 import SmileFace from '../assets/designs/smileface.png'
 
 function Product(props, ref) {
 	const products = [
+		{
+			img: journelJotter,
+			title: 'Journel Jotter',
+			technologies:
+				'ReactJS, Material Tailwind, ExpressJS, PostgreSQL, graphQL,..',
+			duration: 'Nov 2023 - Coming soon',
+			desc: 'Travel planning & journaling',
+			code: 'https://github.com/Capstone-Travel-Planning-Journaling/travel-planning_FE',
+			// demo: 'https://khanhleeee.github.io/portfolio/',
+			lastUpdated: '2023-11-17',
+		},
 		{
 			img: reactPortfolio,
 			title: 'Kas Portfolio',
@@ -98,10 +110,10 @@ function Product(props, ref) {
 	]
 
 	const container = {
-		hidden: { opacity: 1, scale: 0 },
+		hidden: { opacity: 0, y: 50 },
 		visible: {
 			opacity: 1,
-			scale: 1,
+			tranlateY: 0,
 			transition: {
 				delayChildren: 0.3,
 				staggerChildren: 0.2,

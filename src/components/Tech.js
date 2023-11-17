@@ -36,30 +36,30 @@ function Tech(props, ref) {
 			title: 'Javascript',
 			color: 'yellow-400',
 		},
-		{
-			Icon: SiTypescript,
-			title: 'Typescript',
-			color: 'blue-500',
-		},
+		// {
+		// 	Icon: SiTypescript,
+		// 	title: 'Typescript',
+		// 	color: 'blue-500',
+		// },
 		{
 			Icon: DiReact,
 			title: 'ReactJS',
 			color: 'blue-500',
 		},
-		{
-			Icon: FaBootstrap,
-			title: 'Bootstrap',
-			color: 'purple-500',
-		},
+		// {
+		// 	Icon: FaBootstrap,
+		// 	title: 'Bootstrap',
+		// 	color: 'purple-500',
+		// },
 		{
 			Icon: SiTailwindcss,
 			title: 'Tailwind',
 			color: 'blue-400',
 		},
-		{
-			Icon: MUIIcon,
-			title: 'Material UI',
-		},
+		// {
+		// 	Icon: MUIIcon,
+		// 	title: 'Material UI',
+		// },
 		{
 			Icon: DiJava,
 			title: 'Java',
@@ -86,10 +86,10 @@ function Tech(props, ref) {
 	]
 
 	const container = {
-		hidden: { opacity: 1, scale: 0 },
+		hidden: { opacity: 1, y: 50 },
 		visible: {
 			opacity: 1,
-			scale: 1,
+			y: 1,
 			transition: {
 				delayChildren: 0.2,
 				staggerChildren: 0.2,
@@ -106,8 +106,8 @@ function Tech(props, ref) {
 			<div>
 				<motion.div
 					className='flex flex-col justify-center items-center mb-10'
-					initial={{ opacity: 0, x: -50 }}
-					whileInView={{ opacity: 1, x: 0 }}
+					initial={{ opacity: 0, y: -50 }}
+					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
 				>

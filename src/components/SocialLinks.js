@@ -46,7 +46,7 @@ function SocialLinks() {
 				</>
 			),
 			style: 'rounded-br-lg',
-			href: 'Resume_LeMaiKhanh_FrontEndDeveloper.pdf',
+			href: 'Resume_Le Mai Khanh_Front-end Engineer.pdf',
 			download: true,
 		},
 	]
